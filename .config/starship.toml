@@ -1,0 +1,335 @@
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[➜](bold red)"
+
+[username]
+style_user = "bold #87ceeb"
+show_always = true
+format = "[$user]($style)@"
+#format = "[$user]($style)"
+
+[hostname]
+ssh_only = false
+disabled = false
+style = "bold #77dd77"
+format = "[$hostname]($style) | "
+#format = " in "
+
+[cmd_duration]
+min_time = 1
+show_milliseconds = false
+disabled = false
+style = "bold dimmed #26ff8f"
+format = "\\[[$duration]($style)\\]"
+
+[directory]
+truncation_length = 10
+truncate_to_repo = true
+style = "bold blue"
+read_only ="🔒 "
+read_only_style = "bold red"
+format = "[$read_only]($read_only_style)[$path]($style) "
+
+[git_branch]
+symbol = " "
+#symbol = " "
+#symbol = "branch "
+truncation_length = 10
+truncation_symbol = "-"
+style = "bold green"
+format = '\[[$symbol$branch]($style)\]'
+
+[package]
+style = "bold dimmed #e52fd7"
+#style = "bold dimmed #ce35f3"
+format = '\[[$symbol$version]($style)\]'
+#format = "[$symbol$version]($style) "
+#symbol = "📦 "
+#symbol = "pkg "
+symbol = "󰏗"
+
+[git_status]
+format = "([\\[$all_status$ahead_behind\\]]($style) )"
+style = "bold white"
+
+[python]
+format = '\[[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))]($style)\]'
+#format = '\[[$symbol$version]($style)\]'
+symbol = "Python "
+
+[java]
+format = '\[[$symbol$version]($style)\]'
+symbol = "Java "
+style = "red"
+
+[nodejs]
+format = '\[[$symbol($version)]($style)\]'
+symbol = "Node.js "
+
+[gradle]
+format = '\[[$symbol$version]($style)\]'
+symbol = "Gradle "
+
+[kotlin]
+format = '\[[$symbol$version]($style)\]'
+symbol = "Kotlin "
+
+[dart]
+format = '\[[$symbol$version]($style)\]'
+symbol = "Dart "
+
+[sudo]
+symbol = "🧙"
+disabled = false
+format = '\[[as $symbol]($style)\]'
+
+[aws]
+format = '\[[$symbol($profile)(\($region\))(\[$duration\])]($style)\]'
+symbol = "  "
+
+[bun]
+format = '\[[$symbol($version)]($style)\]'
+symbol = "Bun "
+
+[c]
+format = '\[[$symbol($version(-$name))]($style)\]'
+symbol = "C "
+
+[cmake]
+format = '\[[$symbol($version)]($style)\]'
+symbol = "CMake "
+
+[cobol]
+format = '\[[$symbol($version)]($style)\]'
+symbol = "Cobol "
+
+[conda]
+format = '\[[$symbol$environment]($style)\]'
+symbol = "Conda "
+
+[crystal]
+format = '\[[$symbol($version)]($style)\]'
+symbol = "Crystal "
+
+[daml]
+format = '\[[$symbol($version)]($style)\]'
+symbol = "Daml "
+
+[deno]
+format = '\[[$symbol($version)]($style)\]'
+symbol = "Deno "
+
+[docker_context]
+format = '\[[$symbol$context]($style)\]'
+symbol = "Docker "
+
+[dotnet]
+format = '\[[$symbol($version)(🎯 $tfm)]($style)\]'
+symbol = ".NET "
+
+[elixir]
+format = '\[[$symbol($version \(OTP $otp_version\))]($style)\]'
+symbol = "Elixir "
+
+[elm]
+format = '\[[$symbol($version)]($style)\]'
+symbol = "Elm "
+
+[erlang]
+format = '\[[$symbol($version)]($style)\]'
+symbol = "Er "
+
+[fennel]
+format = '\[[$symbol($version)]($style)\]'
+symbol = "Fennel "
+
+[fossil_branch]
+format = '\[[$symbol$branch]($style)\]'
+symbol = " "
+
+[gcloud]
+format = '\[[$symbol$account(@$domain)(\($region\))]($style)\]'
+symbol = "  "
+
+[golang]
+format = '\[[$symbol($version)]($style)\]'
+symbol = "Go "
+
+[guix_shell]
+format = '\[[$symbol]($style)\]'
+symbol = "Guix "
+
+[haskell]
+format = '\[[$symbol($version)]($style)\]'
+symbol = " "
+
+[haxe]
+format = '\[[$symbol($version)]($style)\]'
+symbol = "Haxe "
+
+[helm]
+format = '\[[$symbol($version)]($style)\]'
+symbol = "Helm "
+
+[hg_branch]
+format = '\[[$symbol$branch]($style)\]'
+symbol = " "
+
+[julia]
+format = '\[[$symbol($version)]($style)\]'
+symbol = "Julia "
+
+[kubernetes]
+format = '\[[$symbol$context( \($namespace\))]($style)\]'
+symbol = "K8s "
+
+[lua]
+format = '\[[$symbol($version)]($style)\]'
+symbol = "Lua "
+
+[memory_usage]
+format = '\[$symbol[$ram( | $swap)]($style)\]'
+symbol = "󰍛 "
+# disabled = false
+
+[meson]
+format = '\[[$symbol$project]($style)\]'
+symbol = "Meson "
+
+[nim]
+format = '\[[$symbol($version)]($style)\]'
+symbol = "Nim "
+
+[nix_shell]
+format = '\[[$symbol$state( \($name\))]($style)\]'
+symbol = "Nix "
+
+[ocaml]
+format = '\[[$symbol($version)(\($switch_indicator$switch_name\))]($style)\]'
+symbol = "OCaml "
+
+[opa]
+format = '\[[$symbol($version)]($style)\]'
+symbol = "Opa "
+
+[openstack]
+format = '\[[$symbol$cloud(\($project\))]($style)\]'
+symbol = "  "
+
+[os]
+format = '\[[$symbol]($style)\]'
+
+[perl]
+format = '\[[$symbol($version)]($style)\]'
+symbol = "Perl "
+
+[php]
+format = '\[[$symbol($version)]($style)\]'
+symbol = "Php "
+
+[pijul_channel]
+format = '\[[$symbol$channel]($style)\]'
+symbol = " "
+
+[pulumi]
+format = '\[[$symbol$stack]($style)\]'
+symbol = "Pulumi "
+
+[purescript]
+format = '\[[$symbol($version)]($style)\]'
+symbol = "Pure "
+
+[raku]
+format = '\[[$symbol($version-$vm_version)]($style)\]'
+symbol = "Raku "
+
+[red]
+format = '\[[$symbol($version)]($style)\]'
+symbol = "Red "
+
+[ruby]
+format = '\[[$symbol($version)]($style)\]'
+symbol = "Ruby "
+
+[rust]
+format = '\[[$symbol($version)]($style)\]'
+symbol = "Rust "
+
+[scala]
+format = '\[[$symbol($version)]($style)\]'
+symbol = "Scala "
+
+[spack]
+format = '\[[$symbol$environment]($style)\]'
+symbol = "Spack "
+
+[swift]
+format = '\[[$symbol($version)]($style)\]'
+symbol = "Swift "
+
+[terraform]
+format = '\[[$symbol$workspace]($style)\]'
+
+[time]
+format = '\[[$time]($style)\]'
+disabled = true
+use_12hr = false
+utc_time_offset = "local"
+
+[vagrant]
+format = '\[[$symbol($version)]($style)\]'
+symbol = "Vagrant "
+
+[vlang]
+format = '\[[$symbol($version)]($style)\]'
+symbol = "V "
+
+[zig]
+format = '\[[$symbol($version)]($style)\]'
+symbol = "Zig "
+
+[solidity]
+format = '\[[$symbol($version)]($style)\]'
+symbol = "S "
+
+# nerd font os symbols
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Windows = "󰍲 "
