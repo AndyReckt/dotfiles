@@ -1,3 +1,5 @@
+.config/zsh/zhistory
+
 .config/spicetify
 !.config/spicetify/config-xpui.ini
 
