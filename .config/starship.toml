@@ -1,3 +1,24 @@
+format = "$all$fill$shell$time$line_break$character"
+
+[fill]
+symbol = " "
+
+[line_break]
+disabled = false
+
+[time]
+# format = '\[[$time]($style)\]($style)' # bracketed
+format = '[$time]($style)($style)'
+disabled = false
+use_12hr = false
+utc_time_offset = "local"
+style = "dimmed 245"
+
+[shell]
+format = "[$indicator]($style) "
+style = "dimmed 245"
+disabled = true # can be toggled
+
 [character]
 success_symbol = "[➜](bold green)"
 error_symbol = "[➜](bold red)"
@@ -16,7 +37,7 @@ format = "[$hostname]($style) | "
 #format = " in "
 
 [cmd_duration]
-min_time = 1
+min_time = 50
 show_milliseconds = false
 disabled = false
 style = "bold dimmed #26ff8f"
@@ -269,12 +290,6 @@ symbol = "Swift "
 
 [terraform]
 format = '\[[$symbol$workspace]($style)\]'
-
-[time]
-format = '\[[$time]($style)\]'
-disabled = true
-use_12hr = false
-utc_time_offset = "local"
 
 [vagrant]
 format = '\[[$symbol($version)]($style)\]'
