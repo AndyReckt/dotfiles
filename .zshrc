@@ -11,7 +11,8 @@ if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
 fi
 
-HISTFILE=~/.config/zsh/zhistory
+ZSH_COMPDUMP="$HOME/.config/zsh/zcompdump"
+HISTFILE=$HOME/.config/zsh/zhistory
 HISTSIZE=5000
 SAVEHIST=5000
 
@@ -50,6 +51,7 @@ source $ZSH/oh-my-zsh.sh
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src # oh my zsh install
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh # pacman install
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh # pacman install
+
 ####################
 
 alias mirrors="sudo reflector --verbose --latest 5 --country 'France' --age 6 --sort rate --save /etc/pacman.d/mirrorlist"
