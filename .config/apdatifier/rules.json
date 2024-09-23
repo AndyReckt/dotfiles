@@ -1,0 +1,4 @@
+[{"type":"repo","value":"core","icon":"penguin","excluded":false},
+{"type":"repo","value":"aur","icon":"distributor-logo-archlinux","excluded":false},
+{"type":"repo","value":"endeavouros","icon":"endeavouros","excluded":false},
+{"type":"name","value":"multilib","icon":"bookworm","excluded":false}]
