@@ -4,6 +4,9 @@ export TERMINAL='kitty'
 export BROWSER='firefox'
 export HISTORY_IGNORE="(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
 
+export PATH=$PATH:/home/andy/.spicetify
+
+
 if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
 fi
@@ -26,6 +29,26 @@ if [[ "$TERM" == (kitty*|alacritty*|termite*|gnome*|konsole*|kterm*|putty*|rxvt*
 	# add-zsh-hook -Uz preexec xterm_title_preexec
 fi
 
+source /usr/share/nvm/init-nvm.sh
+
+# Oh My Zsh
+export ZSH="$HOME/.oh-my-zsh"
+zstyle ':omz:update' mode auto # update automatically without asking
+
+COMPLETION_WAITING_DOTS="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+plugins=(
+	git aliases dotenv docker docker-compose
+	fzf gradle kitty mvn nvm pip pm2 python 
+	tldr vscode yarn rust ssh sudo systemd 
+)
+
+source $ZSH/oh-my-zsh.sh
+
+# zsh-syntax-highlighting & zsh-autosuggestions
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 ####################
 
 alias mirrors="sudo reflector --verbose --latest 5 --country 'France' --age 6 --sort rate --save /etc/pacman.d/mirrorlist"
@@ -41,4 +64,3 @@ alias neofetch="fastfetch"
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh --cmd cd)"
-export PATH=$PATH:/home/andy/.spicetify
