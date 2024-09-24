@@ -6,3 +6,5 @@
 install.log
 
 .config/apdatifier/config.conf
+
+.config/zsh/
