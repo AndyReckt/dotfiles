@@ -49,6 +49,7 @@ source $ZSH/oh-my-zsh.sh
 
 # zsh-completions, zsh-syntax-highlighting & zsh-autosuggestions
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src # oh my zsh install
+# source $HOME/.config/zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh # manual install
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh # pacman install
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh # pacman install
 
