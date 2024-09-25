@@ -28,5 +28,5 @@ custom_apps           = lyrics-plus|marketplace
 
 ; DO NOT CHANGE!
 [Backup]
-version = 1.2.45.454.gc16ec9f6
+version = 1.2.47.364.gf06e5cee
 with    = 2.38.3

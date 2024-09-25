@@ -1,7 +1,7 @@
 .config/zsh/zhistory
 
 .config/spicetify
-!.config/spicetify/config-xpui.ini
+!.config/spicetify/config-xpui.ini.x
 
 install.log
 
