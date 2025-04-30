@@ -1,1 +1,4 @@
 Hooks. Pacman can run pre- and post-transaction hooks from the /usr/share/libalpm/hooks/ directory; more directories can be specified with the HookDir option in **pacman.conf** , which defaults to **/etc/pacman.d/hooks**
+
+**WARNING:** edit the files with your username
+
